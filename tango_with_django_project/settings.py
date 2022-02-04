@@ -14,16 +14,11 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Here we print some path to show how __file__ and path class work
-print(__file__)
-print(os.path.dirname(__file__))
-print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 MEDIA_DIR = os.path.join(BASE_DIR, 'media')
-
-print(TEMPLATE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -35,7 +30,6 @@ SECRET_KEY = 'vs)sf_e5r0@rd41th4=%#=o#7*jo%2t@zz@vx-fx1pjjrsd%9m'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
